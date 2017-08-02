@@ -1,4 +1,4 @@
-# Bamazon
+# BAMAZON
 
 ## Customer View
 
