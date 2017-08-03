@@ -35,6 +35,8 @@ easy access to his inventory and edit as needed.
 
 	![Image of Customer Exit](https://menelik7.github.io/Bamazon/images/CustomerView6.PNG)
 
+	![Image of Customer Exit](https://menelik7.github.io/Bamazon/images/CustomerView7.PNG)
+
 
 
 	
