@@ -60,7 +60,7 @@ function viewLowInventory() {
       if (res[i].stock_quantity < 5) {
         result.push({item_id: res[i].item_id,
           product_name: res[i].product_name,
-          // department_name: res[i].department_name,
+          department_name: res[i].department_name,
           price: res[i].price,
           stock_quantity: res[i].stock_quantity
         });
@@ -85,7 +85,7 @@ function addInventoryView() {
       result.push({
         item_id: res[i].item_id,
         product_name: res[i].product_name,
-        // department_name: res[i].department_name,
+        department_name: res[i].department_name,
         price: res[i].price,
         stock_quantity: res[i].stock_quantity
       });
@@ -204,7 +204,7 @@ function deleteAProductView() {
       result.push({
         item_id: res[i].item_id,
         product_name: res[i].product_name,
-        // department_name: res[i].department_name,
+        department_name: res[i].department_name,
         price: res[i].price,
         stock_quantity: res[i].stock_quantity
       });
@@ -285,6 +285,7 @@ function menuOptions() {
           break;
 
         case "Exit":
+          console.log("\n\rThanks for visiting Bamazon!")
           connection.end();
           return;
           break;
