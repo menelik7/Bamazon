@@ -25,13 +25,15 @@ easy access to his inventory and edit as needed.
 
 	If the user entered an amount that the store can accomodate, then the customer will be
 	given confirmation that the order has gone through, their total will be displayed, and they
-	will have the choice to keep shopping or exit.  
+	will have the choice to keep shopping or exit.  If they entered an amount that the store cannot
+	accommodate, they will be shown what the store currently has on stock and prompted to enter a lower quantity:
 
 	![Image of Customer Valid item_id and Quantity](https://menelik7.github.io/Bamazon/images/CustomerView4.PNG)
+	![Image of Customer Quantity Too High](https://menelik7.github.io/Bamazon/images/CustomerView5.PNG)
 
 	If they chose the exit:
 
-	![Image of Customer Exit](https://menelik7.github.io/Bamazon/images/CustomerView5.PNG)
+	![Image of Customer Exit](https://menelik7.github.io/Bamazon/images/CustomerView6.PNG)
 
 
 
