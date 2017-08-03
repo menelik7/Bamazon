@@ -82,7 +82,7 @@ If the Manager decides to `Exit`:
 
 ![Image of Manager Exit](https://menelik7.github.io/Bamazon/images/ManagerView8.PNG)
 
-if at any point the user makes an invalid entry, the app will prompt him/her to re-enter the information as demonstrated in the Customer's View portion.
+if at any point the user makes an invalid entry, the app will prompt him/her to re-enter the information as demonstrated in the example below:
 
 ![Image of Manager Exit](https://menelik7.github.io/Bamazon/images/ManagerView9.PNG)
 
