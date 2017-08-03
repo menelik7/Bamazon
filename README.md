@@ -1,29 +1,35 @@
 # BAMAZON
 
-A `CLI` e-commerce app that is cool and easy to use.  `mySQL and Node.js` were the tools of choice.  The app provides a hassle-free shopping experience to customer, and allows the Manager to gain easy access to his inventory and edit as needed.
+A `CLI` e-commerce app that is cool and easy to use.  `mySQL and Node.js` were the tools of choice.  The app provides a hassle-free shopping experience to the customer, and allows the Manager to gain easy access to his inventory and edit as needed.
 
 
 ## Bamazon Customer
 
 ###### At Startup
 
-When the customer launches the app, he/she will be given the option to choose from the list of available items:
+When the customer launches the app, he/she will be given the option to choose from a list of available items:
 
 ![Image of Customer View Initial Screen](https://menelik7.github.io/Bamazon/images/CustomerView1.PNG)
 
 ###### Shopping
 
-If the user decides to shop, they will enter an `item_id`.  The app will then display the chosen item and will prompt the user to enter a quantity.  If the item_id was invalid, the user will be prompted to re-enter a valid item_id:
+If the user decides to shop, they will enter an `item_id`.  The app will then display the chosen item and will prompt the user to enter a quantity:
 
 ![Image of Customer Item Choice](https://menelik7.github.io/Bamazon/images/CustomerView2.PNG)
+
+If the item_id was invalid, the user will be prompted to re-enter a valid item_id:
+
 ![Image of Customer invalid item_id](https://menelik7.github.io/Bamazon/images/CustomerView3.PNG)
 
-If the user entered an `amount` that the store can accomodate, then the customer will be given confirmation that the order has gone through, their total will be displayed, and they will have the choice to `keep shopping or exit`.  If they entered an amount that the store cannot accommodate, they will be shown what the store currently has on stock and prompted to enter a lower quantity:
+If the user entered an `amount` that the store can accomodate, he/she will be given confirmation that the order has gone through, his/her total will be displayed, and he/she will have the choice to `keep shopping or exit`:
 
 ![Image of Customer Valid item_id and Quantity](https://menelik7.github.io/Bamazon/images/CustomerView4.PNG)
+
+If he/she entered an amount that the store cannot accommodate, the app will display what the store currently has in stock and prompt the user to enter a lower quantity:
+
 ![Image of Customer Quantity Too High](https://menelik7.github.io/Bamazon/images/CustomerView5.PNG)
 
-If they chose the `exit`:
+If the customer choses the `exit`:
 
 ![Image of Customer Exit](https://menelik7.github.io/Bamazon/images/CustomerView6.PNG)
 
@@ -34,7 +40,7 @@ If they chose the `exit`:
 
 ###### At Startup
 
-When the Manager starts the app, he will be given the option to choose from a list of menu items:
+When the Manager starts the app, he will be given the opportunity to choose from a list of menu options:
 
 ![Image of Manager Menu Options](https://menelik7.github.io/Bamazon/images/ManagerView1.PNG)
 
@@ -54,7 +60,7 @@ If there is no `Low Inventory` to report:
 
 ###### Add to Iventory
 		
-If the Manager decides to ad to the current inventory, he will be prompted to enter the `item_id` of the product he wishes to order, and enter an amount.  Confirmation will be displayed once the order is complete.  He can then chose to view the `Products for Sale` to ascertain that the order was processed:
+If the Manager decides to add to the current inventory, he will be prompted to enter the `item_id` of the product he wishes to order, and enter an amount.  Confirmation will be displayed once the order has been completed.  He can then chose to view the `Products for Sale` to ascertain that the order was processed:
 
 ![Image of Add to Inventory](https://menelik7.github.io/Bamazon/images/ManagerView5.PNG)
 
@@ -76,6 +82,9 @@ If the Manager decides to `Exit`:
 
 ![Image of Manager Exit](https://menelik7.github.io/Bamazon/images/ManagerView8.PNG)
 
+if at any point the user makes an invalid entry, the app will prompt him/her to re-enter the information as demonstrated in the Customer's View portion.
+
+![Image of Manager Exit](https://menelik7.github.io/Bamazon/images/ManagerView9.PNG)
 
 ## Copyright
 
