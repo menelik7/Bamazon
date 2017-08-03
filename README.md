@@ -66,7 +66,7 @@ To delete a product, the Manager will be prompted to enter the `item_id` of the 
 ###### Exit
 		
 If the Manager decides to `Exit`:
-![Image of Manager Exit](https://menelik7.github.io/Bamazon/images/ManagerView.PNG)
+![Image of Manager Exit](https://menelik7.github.io/Bamazon/images/ManagerView8.PNG)
 
 
 	
