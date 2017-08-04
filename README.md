@@ -32,7 +32,9 @@ If he/she entered an amount that the store cannot accommodate, the app will disp
 
 ![Image of Customer Quantity Too High](https://menelik7.github.io/Bamazon/images/CustomerView5.PNG "Customer Quantity Too High")
 
-If the customer choses the `exit`:
+###### Exit
+
+If the customer choses the `Exit`:
 
 ![Image of Customer Exit](https://menelik7.github.io/Bamazon/images/CustomerView6.PNG "Customer Exit")
 
