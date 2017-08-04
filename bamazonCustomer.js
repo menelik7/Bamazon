@@ -63,6 +63,7 @@ function chooseAnItem() {
     .then(function(answer) {
       chosenItemId = answer.buyAnItem;
       if (chosenItemId === "0") {
+        console.log("\n\rThank you for visiting Bamazon!\n\r");
         connection.end();
         return;
       }
