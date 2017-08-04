@@ -9,7 +9,7 @@ A `CLI` e-commerce app that is cool and easy to use.  `mySQL and Node.js` were t
 
 When the customer launches the app, he/she will be given the option to choose from a list of available items:
 
-![Image of Customer View Initial Screen](https://menelik7.github.io/Bamazon/images/CustomerView1.PNG)
+![Image of Customer View Initial Screen](https://menelik7.github.io/Bamazon/images/CustomerView1.PNG "Customer View Initial Screen")
 
 ###### Shopping
 
