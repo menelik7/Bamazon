@@ -12,6 +12,9 @@ When the customer launches the app, he/she will be given the option to choose fr
 ![Image of Customer View Initial Screen](https://menelik7.github.io/Bamazon/images/CustomerView1.PNG "Customer View Initial Screen")
 
 ###### Shopping
+If the user is not interested in the products, he/she enters "0" to `Exit`:
+
+![Image of User Not Interested](https://menelik7.github.io/Bamazon/images/CustomerView2.PNG "User Not Interested")
 
 If the user decides to shop, they will enter an `item_id`.  The app will then display the chosen item and will prompt the user to enter a quantity:
 
