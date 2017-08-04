@@ -14,7 +14,7 @@ When the customer launches the app, he/she will be given the option to choose fr
 ###### Shopping
 If the user is not interested in the products, he/she enters "0" to `Exit`:
 
-![Image of User Not Interested](https://menelik7.github.io/Bamazon/images/CustomerView2.PNG "User Not Interested")
+![Image of User Not Interested](https://menelik7.github.io/Bamazon/images/UserNotInterested.PNG "User Not Interested")
 
 If the user decides to shop, they will enter an `item_id`.  The app will then display the chosen item and will prompt the user to enter a quantity:
 
