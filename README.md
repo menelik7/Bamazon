@@ -1,6 +1,6 @@
 # BAMAZON
 
-A `CLI` e-commerce app that is cool and easy to use.  `mySQL and Node.js` were the tools of choice.  The app provides a hassle-free shopping experience to the customer, and allows the Manager to gain easy access to his inventory and edit as needed.
+A `CLI` commerce app that is cool and easy to use.  `mySQL and Node.js` were the tools of choice.  The app provides a hassle-free shopping experience to the customer, and allows the Manager to gain easy access to his inventory and edit as needed.
 
 
 ## Bamazon Customer
@@ -34,7 +34,7 @@ If he/she entered an amount that the store cannot accommodate, the app will disp
 
 ###### Exit
 
-If the customer choses the `Exit`:
+If the customer chooses to `Exit`:
 
 ![Image of Customer Exit](https://menelik7.github.io/Bamazon/images/CustomerView6.PNG "Customer Exit")
 
@@ -45,7 +45,7 @@ If the customer choses the `Exit`:
 
 ###### At Startup
 
-When the Manager starts the app, he will be given the opportunity to choose from a list of menu options:
+When the Manager starts the app, he will be given the opportunity to choose from a list of menu options: `View Products for Sale`, `View Low Inventory`, `Add to Inventory`, `Add New Product`, `Delete a Product`, or `Exit`.
 
 ![Image of Manager Menu Options](https://menelik7.github.io/Bamazon/images/ManagerView1.PNG "Manager Menu Options")
 
@@ -65,13 +65,13 @@ If there is no `Low Inventory` to report:
 
 ###### Add to Iventory
 		
-If the Manager decides to add to the current inventory, he will be prompted to enter the `item_id` of the product he wishes to order, and enter an amount.  Confirmation will be displayed once the order has been completed.  He can then chose to view the `Products for Sale` to ascertain that the order was processed:
+If the Manager decides to add to the current inventory, he will be prompted to enter the `item_id` of the product he wishes to order, and enter an amount.  Confirmation will be displayed once the order has been completed.  He can then choose to view the `Products for Sale` to ascertain that the order was processed:
 
 ![Image of Add to Inventory](https://menelik7.github.io/Bamazon/images/ManagerView5.PNG "Add to Inventory")
 
 ###### Add New Product
 		
-To add a new product, the Manager will be prompted to enter a series of information including `product_name`, `department_name`, `price`, and `stock_quantity`.  Once the information has been entered, the system will update the inventory with the new product.  The Manager can then chose the `Products for Sale` option from the menu to confirm that the task was successfully carried out:
+To add a new product, the Manager will be prompted to enter a series of information including `product_name`, `department_name`, `price`, and `stock_quantity`.  Once the information has been entered, the system will update the inventory with the new product.  The Manager can then choose the `Products for Sale` option from the menu to confirm that the task was successfully carried out:
 
 ![Image of Add New Product](https://menelik7.github.io/Bamazon/images/ManagerView6.PNG "Add New Product")
 
@@ -87,9 +87,32 @@ If the Manager decides to `Exit`:
 
 ![Image of Manager Exit](https://menelik7.github.io/Bamazon/images/ManagerView8.PNG "Manager Exit")
 
-if at any point the user makes an invalid entry, the app will prompt him/her to re-enter the information as demonstrated in the example below:
+If at any point the user makes an invalid entry, the app will prompt him/her to re-enter the information as demonstrated in the example below:
 
 ![Image of Manager invalid item_id](https://menelik7.github.io/Bamazon/images/ManagerView9.PNG "Manager invalid item_id")
+
+
+## Bamazon Supervisor
+
+###### At Startup
+
+When the Supervisor starts the app, he will be given the opportunity to choose from a list of menu options: `View Product Sales by Department`, `Create New Department`, or `Exit`.
+
+![Image of Supervisor Menu Options](https://menelik7.github.io/Bamazon/images/SupervisorView1.PNG "Supervisor Menu Options")
+
+###### View Product Sales by Department
+
+If the Supervisor choses to view the product sales, the app joins the entire `departments` table with the `product_sales` column from the `products` table.  It then DYNAMICALLY calculates the store's profit for each item (product_sales - over_head_cost) and pushes the values into a new `total_profit` column.  This new column finally gets pushed into the object array of our aforementioned joined table and gets printed to our console window.  The `total_profit` column is not part of our database.
+
+![Image of Departments Database View](https://menelik7.github.io/Bamazon/images/departmentsDatabase.PNG "Departments Database View")
+![Image of Products Database View](https://menelik7.github.io/Bamazon/images/productsDatabase.PNG "Products Database View")
+![Image of Supervisor Product Sales View](https://menelik7.github.io/Bamazon/images/SupervisorView2.PNG "Supervisor Product Sales View")
+
+###### Create New Department
+
+Nothing was specified in the homework assignment for this menu option...
+
+![Image of New Department View](https://menelik7.github.io/Bamazon/images/SupervisorView2.PNG "Create New Department View")
 
 ## Copyright
 

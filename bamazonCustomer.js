@@ -103,16 +103,29 @@ function enterAmount() {
           if (amount <= stock){
             console.log("Your order of " + amount + " " + item + "(s) has been succefully placed.\r\n" +
                         "Your total is: $" + total.toFixed(2) + " + tax.\n\r");
-            var query = connection.query(
-              "UPDATE products SET ? WHERE ?",[
+            connection.query(
+            "UPDATE products SET ? WHERE ?",[
                 {
                   stock_quantity: res[itemIndex].stock_quantity - amount,
                 },
                 {
                   item_id: res[itemIndex].item_id
+                },
+                {
+                  product_sales: res[itemIndex].product_sales + total.toFixed(2)
                 }
               ]
             );
+            connection.query(
+            "UPDATE products SET ? WHERE ?",[
+              {
+                product_sales: res[itemIndex].product_sales + Number (total.toFixed(2))
+              },
+              {
+                item_id: res[itemIndex].item_id
+              }
+            ]
+          );
             keepShoppingOrExit();
           } else {
             console.log("Sorry we only have " + stock + " currently in stock.  PLease lower the quantity of your order.\n\r")
