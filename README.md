@@ -112,7 +112,7 @@ If the Supervisor choses to view the product sales, the app joins the entire `de
 
 Nothing was specified in the homework assignment for this menu option...
 
-![Image of New Department View](https://menelik7.github.io/Bamazon/images/SupervisorView2.PNG "Create New Department View")
+![Image of New Department View](https://menelik7.github.io/Bamazon/images/NothingSpecified.PNG "Create New Department View")
 
 ## Copyright
 
