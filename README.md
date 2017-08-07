@@ -1,5 +1,3 @@
-# BAMAZON
-
 A `CLI` commerce app that is cool and easy to use.  `mySQL and Node.js` were the tools of choice.  The app provides a hassle-free shopping experience to the customer, and allows the Manager to gain easy access to his inventory and edit as needed.
 
 
