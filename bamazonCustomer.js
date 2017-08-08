@@ -110,9 +110,6 @@ function enterAmount() {
                 },
                 {
                   item_id: res[itemIndex].item_id
-                },
-                {
-                  product_sales: res[itemIndex].product_sales + total.toFixed(2)
                 }
               ]
             );
