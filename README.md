@@ -9,7 +9,7 @@ Our database has two tables:
 
 ###### At Startup
 
-The will be given the option to choose from a list of available items pulled from the `products` table:
+The Customer will be given the option to choose from a list of available items pulled from the `products` table:
 
 ![Image of Customer View Initial Screen](https://menelik7.github.io/Bamazon/images/CustomerView1.PNG "Customer View Initial Screen")
 
