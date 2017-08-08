@@ -193,7 +193,7 @@ function addNewProduct() {
         connection.query(
           "INSERT INTO departments SET ?",
           {
-            department_name: productName,
+            department_name: departmentName,
             over_head_costs: overHeadCost
           },
           function(err, res) {

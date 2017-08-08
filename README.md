@@ -117,10 +117,14 @@ If the Supervisor choses to view the product sales, the app joins the entire `de
 
 ![Image of Supervisor Product Sales View](https://menelik7.github.io/Bamazon/images/SupervisorView3.PNG "Supervisor Product Sales View after Deletion of new product")
 
+When the Supervisor is ready to exit, he can choose `Exit` from the menu options.
+
+Thanks for taking the time to read. 
+
 
 ## Copyright
 
-Menelik Tefera 2017
+`Menelik Tefera 2017`
 menelikworku@gmail.com
 
 
