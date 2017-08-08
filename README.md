@@ -1,4 +1,4 @@
-A `CLI` commerce app that is cool and easy to use.  `mySQL and Node.js` were the tools of choice.  The app provides a hassle-free shopping experience to the customer, and allows the Manager to gain easy access to his inventory and edit as needed.
+A `CLI` commerce app that is cool and easy to use.  `mySQL and Node.js` were the tools of choice.  The app provides a hassle-free shopping experience to the Customer, and allows the Manager to gain easy access to his inventory and edit as needed.
 
 Our database has two tables:
 1. `products` will be used to display available items to the customer, as well as products for sale to the Manager.
@@ -9,7 +9,7 @@ Our database has two tables:
 
 ###### At Startup
 
-The Customer will be given the option to choose from a list of available items pulled from the `products` table:
+The customer will be given the option to choose from a list of available items pulled from the `products` table:
 
 ![Image of Customer View Initial Screen](https://menelik7.github.io/Bamazon/images/CustomerView1.PNG "Customer View Initial Screen")
 
@@ -47,7 +47,7 @@ If the customer chooses to `Exit`:
 
 ###### At Startup
 
-When the Manager starts the app, he will be given the opportunity to choose from a list of menu options: `View Products for Sale`, `View Low Inventory`, `Add to Inventory`, `Add New Product`, `Delete a Product`, or `Exit`.
+The manager will be given the opportunity to choose from a list of menu options: `View Products for Sale`, `View Low Inventory`, `Add to Inventory`, `Add New Product`, `Delete a Product`, or `Exit`.
 
 ![Image of Manager Menu Options](https://menelik7.github.io/Bamazon/images/ManagerView1.PNG "Manager Menu Options")
 
@@ -67,25 +67,25 @@ If there is no `Low Inventory` to report:
 
 ###### Add to Iventory
 		
-If the Manager decides to add to the current inventory, he will be prompted to enter the `item_id` of the product he wishes to order, and enter an amount.  Confirmation will be displayed once the order has been completed.  He can then choose to view the `Products for Sale` to ascertain that the order was processed:
+If the manager decides to add to the current inventory, he will be prompted to enter the `item_id` of the product he wishes to order, and enter an amount.  Confirmation will be displayed once the order has been completed.  He can then choose to view the `Products for Sale` to ascertain that the order was processed:
 
 ![Image of Add to Inventory](https://menelik7.github.io/Bamazon/images/ManagerView5.PNG "Add to Inventory")
 
 ###### Add New Product
 		
-To add a new product, the Manager will be prompted to enter a series of information including `product_name`, `department_name`, `price`, `stock_quantity`, and `over_head_costs`.  Once the information has been entered, the system will update both tables with the new product.  The Manager can then choose the `Products for Sale` option from the menu to confirm that the task was successfully carried out:
+To add a new product, the manager will be prompted to enter a series of information including `product_name`, `department_name`, `price`, `stock_quantity`, and `over_head_costs`.  Once the information has been entered, the system will update both tables with the new product.  The manager can then choose the `Products for Sale` option from the menu to confirm that the task was successfully carried out:
 
 ![Image of Add New Product](https://menelik7.github.io/Bamazon/images/ManagerView6.PNG "Add New Product")
 
 ###### Delete a Product
 		
-To delete a product, the Manager will be prompted to enter the `item_id` of the product.  If the entry was valid, the system will remove the corresponding product from both tables.  The Manager can then chose the `Products for Sale` option from the menu to confirm that the task was successfully carried out:
+To delete a product, the manager will be prompted to enter the `item_id` of the product.  If the entry was valid, the system will remove the corresponding product from both tables.  He/She can then choose the `Products for Sale` option from the menu to confirm that the task was successfully carried out:
 
 ![Image of Delete a Product](https://menelik7.github.io/Bamazon/images/ManagerView7.PNG "Delete a Product")
 
 ###### Exit
 		
-If the Manager decides to `Exit`:
+If the manager decides to `Exit`:
 
 ![Image of Manager Exit](https://menelik7.github.io/Bamazon/images/ManagerView8.PNG "Manager Exit")
 
@@ -98,13 +98,13 @@ If at any point the user makes an invalid entry, the app will prompt him/her to 
 
 ###### At Startup
 
-When the Supervisor starts the app, he will be given the opportunity to choose from a list of menu options: `View Product Sales by Department`, `Create New Department`, or `Exit`.
+The supervisor will be given the opportunity to choose from a list of menu options: `View Product Sales by Department`, `Create New Department`, or `Exit`.
 
 ![Image of Supervisor Menu Options](https://menelik7.github.io/Bamazon/images/SupervisorView1.PNG "Supervisor Menu Options")
 
 ###### View Product Sales by Department
 
-If the Supervisor choses to view the product sales, the app joins the entire `departments` table with the `product_sales` column from the `products` table.  It then DYNAMICALLY calculates the store's profit for each item (product_sales - over_head_cost) and pushes the values into a new `total_profit` column.  This new column finally gets pushed into the object array of our aforementioned joined table and gets printed to our console window.  The `total_profit` column is not part of our database.
+If the supervisor choses to view the product sales, the app joins the entire `departments` table with the `product_sales` column from the `products` table.  It then DYNAMICALLY calculates the store's profit for each item (product_sales - over_head_cost) and pushes the values into a new `total_profit` column.  This new column finally gets pushed into the object array of our aforementioned joined table and gets printed to our console window.  The `total_profit` column is not part of our database.
 
 ![Image of Departments Database View](https://menelik7.github.io/Bamazon/images/departmentsDatabase.PNG "Departments Database View")
 ![Image of Products Database View](https://menelik7.github.io/Bamazon/images/productsDatabase.PNG "Products Database View")
@@ -117,7 +117,7 @@ If the Supervisor choses to view the product sales, the app joins the entire `de
 
 ![Image of Supervisor Product Sales View](https://menelik7.github.io/Bamazon/images/SupervisorView3.PNG "Supervisor Product Sales View after Deletion of new product")
 
-When the Supervisor is ready to exit, he can choose `Exit` from the menu options.
+The supervisor can exit by simply selecting `Exit` from the menu options.
 
 Thanks for taking the time to read. 
 
