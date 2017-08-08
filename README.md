@@ -9,7 +9,7 @@ Our database has two tables:
 
 ###### At Startup
 
-When the customer launches the app, he/she will be given the option to choose from a list of available items pulled from the `products` table:
+The will be given the option to choose from a list of available items pulled from the `products` table:
 
 ![Image of Customer View Initial Screen](https://menelik7.github.io/Bamazon/images/CustomerView1.PNG "Customer View Initial Screen")
 
