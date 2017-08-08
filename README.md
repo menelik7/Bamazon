@@ -109,11 +109,11 @@ If the Supervisor choses to view the product sales, the app joins the entire `de
 ![Image of Departments Database View](https://menelik7.github.io/Bamazon/images/departmentsDatabase.PNG "Departments Database View")
 ![Image of Products Database View](https://menelik7.github.io/Bamazon/images/productsDatabase.PNG "Products Database View")
 
-###### Products for Sale view after Manager added a new product
+###### Product Sales view after addition of a new product
 
 ![Image of Supervisor Product Sales View](https://menelik7.github.io/Bamazon/images/SupervisorView2.PNG "Supervisor Product Sales View after Addition of new product")
 
-###### Products for Sale view once the Manager has deleted the new product
+###### Products Sales view after deletion of the new product
 
 ![Image of Supervisor Product Sales View](https://menelik7.github.io/Bamazon/images/SupervisorView3.PNG "Supervisor Product Sales View after Deletion of new product")
 
