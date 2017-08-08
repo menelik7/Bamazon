@@ -36,7 +36,7 @@ connection.connect(function(err) {
 
 
 function ViewProductSalesByDepartment() {
-
+  console.log("\r");
   connection.query("SELECT departments.department_id, departments.department_name, departments.over_head_costs, products.product_sales FROM departments INNER JOIN products ON departments.department_id=products.item_id", 
   function(err, res) {
     if (err) throw err;
@@ -64,7 +64,7 @@ function menuOptions() {
       name: "menuOptions",
       type: "list",
       message: "What would you like to do?",
-      choices: ["View Product Sales by Department", "Create New Department","Exit"]
+      choices: ["View Product Sales by Department", "Exit"]
     })
     .then(function(input) {
       switch (input.menuOptions) {
@@ -74,14 +74,8 @@ function menuOptions() {
           ViewProductSalesByDepartment();
           break;
 
-        case "Create New Department":
-          result = [];
-          console.log("\n\rNothing specified for this feature in the homework assignment instructions...\n\r");
-          menuOptions();
-          break;
-
         case "Exit":
-          console.log("\n\rThanks for visiting Bamazon!")
+          console.log("\nThanks for visiting Bamazon!")
           connection.end();
           return;
           break;

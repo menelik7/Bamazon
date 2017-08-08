@@ -10,8 +10,6 @@ var idContainer = [];
 var itemId = "";
 var itemIndex = "";
 var item = "";
-var stock = 0;
-var newQty = 0;
 require("console.table");
 
 var connection = mysql.createConnection({
@@ -147,7 +145,7 @@ function enterAmount(){
               console.log("Please enter a valid item_id");
               return enterAmount();
             } else {
-              console.log("\n\r" + res.affectedRows + " products updated!\n");
+              console.log("\n\r" + res.affectedRows + " product(s) updated!\n");
               menuOptions();
             }
           }
@@ -171,27 +169,39 @@ function addNewProduct() {
   }, {
     name: "stock_quantity",
     message: "PLease enter the stock_quantity:"
+  }, {
+    name: "over_head_costs",
+    message: "PLease enter the over_head_cost:"
   }
   ]).then(function(answers) {
     var productName = answers.product_name;
     var departmentName = answers.department_name;
     var Price = answers.price;
     var stockQuantity = answers.stock_quantity;
-    connection.query("SELECT * FROM products", function(err, res) {
-      connection.query(
-        "INSERT INTO products SET ?",
-        {
-          product_name: productName,
-          department_name: departmentName,
-          price: Price,
-          stock_quantity: stockQuantity
-        },
-        function(err, res) {
-          console.log("\n\r" + res.affectedRows + " product inserted!\n");
-          menuOptions();
-        }
-      );
-    })
+    var overHeadCost = answers.over_head_costs;
+      connection.query("SELECT * FROM products", function(err, res) {
+        connection.query(
+          "INSERT INTO products SET ?",
+          {
+            product_name: productName,
+            department_name: departmentName,
+            price: Price,
+            stock_quantity: stockQuantity,
+            product_sales: 0
+          }
+        );
+        connection.query(
+          "INSERT INTO departments SET ?",
+          {
+            department_name: productName,
+            over_head_costs: overHeadCost
+          },
+          function(err, res) {
+            console.log("\n" + res.affectedRows + " product(s) inserted in the products and departments tables!\n");
+            menuOptions();
+          }
+        );
+      })
   })
 }
 
@@ -235,12 +245,20 @@ function deleteAProduct() {
             "DELETE FROM products WHERE ?",
             {
               item_id: res[itemIndex].item_id
-            },
-            function(err, res) {
-              console.log("\n\r" + res.affectedRows + " products updated!\n");
-              menuOptions();
             }
           );
+          connection.query("SELECT * FROM departments", function(err, res) {
+            connection.query(
+              "DELETE FROM departments WHERE ?",
+              {
+                department_id: res[itemIndex].department_id
+              },
+              function(err, res) {
+                console.log("\n\r" + res.affectedRows + " product(s) updated in the products and departments tables!\n");
+                menuOptions();
+              }
+            );
+          })
         } else {
           console.log("\n\rPlease enter a valid item_id\n\r");
           return deleteAProduct();

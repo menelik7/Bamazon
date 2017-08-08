@@ -1,11 +1,15 @@
 A `CLI` commerce app that is cool and easy to use.  `mySQL and Node.js` were the tools of choice.  The app provides a hassle-free shopping experience to the customer, and allows the Manager to gain easy access to his inventory and edit as needed.
 
+Our database has two tables:
+1. `products` will be used to display available items to the customer, as well as products for sale to the Manager.
+2. `departments` will be used to display products for sale to the Supervisor. 
+
 
 ## Bamazon Customer
 
 ###### At Startup
 
-When the customer launches the app, he/she will be given the option to choose from a list of available items:
+When the customer launches the app, he/she will be given the option to choose from a list of available items pulled from the `products` table:
 
 ![Image of Customer View Initial Screen](https://menelik7.github.io/Bamazon/images/CustomerView1.PNG "Customer View Initial Screen")
 
@@ -69,13 +73,13 @@ If the Manager decides to add to the current inventory, he will be prompted to e
 
 ###### Add New Product
 		
-To add a new product, the Manager will be prompted to enter a series of information including `product_name`, `department_name`, `price`, and `stock_quantity`.  Once the information has been entered, the system will update the inventory with the new product.  The Manager can then choose the `Products for Sale` option from the menu to confirm that the task was successfully carried out:
+To add a new product, the Manager will be prompted to enter a series of information including `product_name`, `department_name`, `price`, `stock_quantity`, and `over_head_costs`.  Once the information has been entered, the system will update both tables with the new product.  The Manager can then choose the `Products for Sale` option from the menu to confirm that the task was successfully carried out:
 
 ![Image of Add New Product](https://menelik7.github.io/Bamazon/images/ManagerView6.PNG "Add New Product")
 
 ###### Delete a Product
 		
-To delete a product, the Manager will be prompted to enter the `item_id` of the product.  If the entry was valid, the system will remove the corresponding product.  The Manager can then chose the `Products for Sale` option from the menu to confirm that the task was successfully carried out:
+To delete a product, the Manager will be prompted to enter the `item_id` of the product.  If the entry was valid, the system will remove the corresponding product from both tables.  The Manager can then chose the `Products for Sale` option from the menu to confirm that the task was successfully carried out:
 
 ![Image of Delete a Product](https://menelik7.github.io/Bamazon/images/ManagerView7.PNG "Delete a Product")
 
@@ -106,11 +110,6 @@ If the Supervisor choses to view the product sales, the app joins the entire `de
 ![Image of Products Database View](https://menelik7.github.io/Bamazon/images/productsDatabase.PNG "Products Database View")
 ![Image of Supervisor Product Sales View](https://menelik7.github.io/Bamazon/images/SupervisorView2.PNG "Supervisor Product Sales View")
 
-###### Create New Department
-
-Nothing was specified in the homework assignment for this menu option...
-
-![Image of New Department View](https://menelik7.github.io/Bamazon/images/NothingSpecified.PNG "Create New Department View")
 
 ## Copyright
 
