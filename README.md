@@ -2,7 +2,7 @@ A `CLI` commerce app that is cool and easy to use.  `mySQL and Node.js` were the
 
 Our database has two tables:
 1. `products` will be used to display available items to the customer, as well as products for sale to the Manager.
-2. `departments` will be used to display products sales to the Supervisor. 
+2. `departments` will be used to display product sales to the Supervisor. 
 
 
 ## Bamazon Customer
