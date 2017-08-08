@@ -2,7 +2,7 @@ A `CLI` commerce app that is cool and easy to use.  `mySQL and Node.js` were the
 
 Our database has two tables:
 1. `products` will be used to display available items to the customer, as well as products for sale to the Manager.
-2. `departments` will be used to display products for sale to the Supervisor. 
+2. `departments` will be used to display products sales to the Supervisor. 
 
 
 ## Bamazon Customer
@@ -108,7 +108,14 @@ If the Supervisor choses to view the product sales, the app joins the entire `de
 
 ![Image of Departments Database View](https://menelik7.github.io/Bamazon/images/departmentsDatabase.PNG "Departments Database View")
 ![Image of Products Database View](https://menelik7.github.io/Bamazon/images/productsDatabase.PNG "Products Database View")
-![Image of Supervisor Product Sales View](https://menelik7.github.io/Bamazon/images/SupervisorView2.PNG "Supervisor Product Sales View")
+
+###### Products for Sale view after Manager added a new product
+
+![Image of Supervisor Product Sales View](https://menelik7.github.io/Bamazon/images/SupervisorView2.PNG "Supervisor Product Sales View after Addition of new product")
+
+###### Products for Sale view once the Manager has deleted the new product
+
+![Image of Supervisor Product Sales View](https://menelik7.github.io/Bamazon/images/SupervisorView3.PNG "Supervisor Product Sales View after Deletion of new product")
 
 
 ## Copyright
